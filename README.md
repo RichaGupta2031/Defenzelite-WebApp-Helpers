@@ -15,15 +15,19 @@ Speed: Implement features faster with our ready-to-use plugins.
 Quality: Each plugin is rigorously tested and maintained, ensuring reliability and performance.
 Diversity: A wide range of plugins caters to various development needs and scenarios.
 Community: Join a community of like-minded developers committed to making software development easier and more efficient.
+
 👩‍💻👨‍💻 Join Us: Whether you're looking to contribute your own plugin or seeking solutions to enhance your projects, you're in the right place. Explore our collection, contribute your expertise, and let's build robust applications faster, together!
 
 "Empowering developers, one plugin at a time."
 
-##Guidelines
+##Criteria
 - Fully Responsive
-- Easy to use
-- Easy to configure 
-- Scalable
+- Easy to Reuse
+- Easy to Configure 
+- Scalable & Safe
+- Well Structured Code
+- PSR2 Compatible
+- Customizable
 
 ## Todos:
 
@@ -88,6 +92,22 @@ https://www.jqueryscript.net/chart-graph/list-19-3.html
 #Security 
 - Basic Captcha
 -
+
+# Encodings
+- QR Code Generator
+- Barcode Generator
+
+# Streaming
+- HLS Stream
+- IP Camera Stream
+
+
+#Machine Learning
+- Text to Speech
+- Image Recognition
+- Image Classifier
+- Face Recognition
+-   
 
 # Gallery
 - 
