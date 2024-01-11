@@ -8,33 +8,182 @@
                _/ |                                                  
               |__/   
               
-Credits: ORIGINAL CODE OWNER NAME
-Coder: YOUR NAME HERE
+Credits: TEAM-3
+Coder: Richa,Anvesha,Balwant
 This is a public project utilizing open-source packages aimed to provide plug-and-play code to the community.   
 Managed by Defenzelite Private Limited
 -->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Bus seat selector</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- Dependencies CSS (Locally Linked - Don't use CDN) -->
-
-    <!-- Application CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/app.css">
+
 </head>
+
 <body>
 
-    <h1>
-        Hello Devs!
-    </h1>
-    
-    <!-- Dependencies JS (Locally Linked - Don't use CDN) -->
+    <div class="container d-flex justify-content-center">
+        <div class="text-center">
+            <div class="heding">
+                <h6>Ground Floor Seat Reservation</h6>
+            </div>
+            <div class="row">
+                <div class="deck">
 
-    <!-- Application JS -->
-    <script src="assets/js/app.js"></script>
+                    <div class="seat" title="Price-200rs">A1 </div>
+                    <div class="seat" title="Price-200rs">A2</div>
+                    <div class="ml-5"></div>
+
+                    <div class="seat" title="Price-200rs">AA1</div>
+                    <div class="seat" title="Price-200rs">AA2</div>
+                    <div class="seat" title="Price-200rs">AA3</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="deck">
+
+                    <div class="seat" title="Price-150rs">A3</div>
+                    <div class="seat" title="Price-150rs">A4</div>
+                    <div class="ml-5"></div>
+
+
+
+                    <div class="seat" title="Price-150rs">AA4</div>
+                    <div class="seat" title="Price-150rs">AA5</div>
+                    <div class="seat" title="Price-150rs">AA6</div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="deck">
+
+                    <div class="seat" title="Price-100rs">A5</div>
+                    <div class="seat" title="Price-100rs">A6</div>
+                    <div class="ml-5"></div>
+
+
+
+
+                    <div class="seat" title="Price-100rs">AA7</div>
+                    <div class="seat" title="Price-100rs">AA8</div>
+                    <div class="seat" title="Price-100rs">AA9</div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="deck">
+
+                    <div class="seat" title="Price-50rs">A7</div>
+                    <div class="seat" title="Price-50rs">A8</div>
+                    <div class="ml-5"></div>
+
+                    <div class="seat" title="Price-50rs">AA10</div>
+                    <div class="seat" title="Price-50rs">AA11</div>
+                    <div class="seat" title="Price-50rs">AA12</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="deck">
+
+                    <div class="seat" title="Price-50rs">A9</div>
+                    <div class="seat" title="price-50rs">A10</div>
+                    <div class="ml-5"></div>
+
+                    <div class="seat" title="Price-50rs">AA13</div>
+                    <div class="seat" title="Price-50rs">AA14</div>
+                    <div class="seat" title="Price-50rs">AA15</div>
+
+                </div>
+            </div>
+            <button id="bookButton" onclick="bookLowerSeats()">Book Selected Seats</button>
+            <button id="bookButtonclear" onclick="clearSelection()">clear selection</button>
+            <div id="totalLowerTicketPrice"></div>
+        </div>
+    </div>
+
+
+    <div class="container d-flex justify-content-center">
+        <div class="text-center">
+
+            <h6>Upper Berth Seat Reservation</h6>
+            <div class="row">
+                <div class="deck">
+
+                    <div class=" seat upperSelected" title="Price-300rs">B1 </div>
+                    <div class=" seat upperSelected" title="Price-300rs">B2</div>
+                    <div class="ml-5"></div>
+
+                    <div class=" seat upperSelected" title="Price-300rs">BB1</div>
+                    <div class=" seat upperSelected" title="Price-300rs">BB2</div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="deck">
+
+                    <div class=" seat upperSelected" title="Price-300rs">B3</div>
+                    <div class=" seat upperSelected" title="Price-300rs">B4</div>
+                    <div class="ml-5"></div>
+
+
+
+                    <div class=" seat upperSelected" title="Price-300rs">BB3</div>
+                    <div class=" seat upperSelected" title="Price-300rs">BB4</div>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="deck">
+
+                    <div class=" seat upperSelected" title="Price-300rs">B5</div>
+                    <div class=" seat upperSelected" title="Price-300rs">B6</div>
+                    <div class="ml-5"></div>
+
+
+
+
+                    <div class="upperSelected" title="Price-300rs">BB5</div>
+                    <div class=" seat upperSelected" title="Price-300rs">BB6</div>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="deck">
+
+                    <div class=" seat upperSelected" title="Price-300rs">B7</div>
+                    <div class=" seat upperSelected" title="Price-300rs">B8</div>
+                    <div class="ml-5"></div>
+
+                    <div class=" seat upperSelected" title="Price-300rs">BB7</div>
+                    <div class=" seat upperSelected" title="Price-300rs">BB8</div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="deck">
+
+                    <div class=" seat upperSelected" title="Price-300rs">B9</div>
+                    <div class=" seat upperSelected" title="Price-300rs">B10</div>
+                    <div class="ml-5"></div>
+
+                    <div class=" seat upperSelected" title="Price-300rs">BB9</div>
+                    <div class=" seat upperSelected" title="Price-300rs">BB10</div>
+
+
+                </div>
+            </div>
+            <button id="bookButton2" onclick="bookUpperSeats()">Book upper berth Seats</button>
+            <button id="bookButtonclear2" onclick="cear-selection()">clear selection</button>
+            <div id="totalUpperTicketPrice"></div>
+            <script src="assets/js/app.js"></script>
+
 </body>
+
 </html>
